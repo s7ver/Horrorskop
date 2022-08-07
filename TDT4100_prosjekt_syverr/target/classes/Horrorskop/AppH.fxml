@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/17.02-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Horrorskop.HorrorskopController">
+   <children>
+      <Text fx:id="outputhorrorskop" layoutX="28.0" layoutY="203.0" text="" textAlignment="CENTER" wrappingWidth="743.2509765625">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="input" layoutX="268.0" layoutY="469.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Text layoutX="112.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Er du selv synsk eller spirituell? Skriv et horrorskop, da vel!">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="489.0" layoutY="469.0" mnemonicParsing="false" onAction="#lagreHorrorskop" text="Lagre">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Text layoutX="69.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Misfornøyd med spådommen?" wrappingWidth="172.8682915372442">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="252.0" layoutY="320.0" mnemonicParsing="false" onAction="#bytt" text="Bytt horrorskopet med et nytt">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Text layoutX="192.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Horrorskopet må være unikt og på mer enn 10 tegn)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <MenuButton layoutX="286.0" layoutY="107.0" mnemonicParsing="false" text="Velg stjernetegn">
+        <items>
+         <MenuItem mnemonicParsing="false" onAction="#onClickVaren" text="Væren (21.mars-19. april)" />
+         <MenuItem mnemonicParsing="false" onAction="#onClickTyren" text="Tyren (20.april-20.mai)" />
+         <MenuItem mnemonicParsing="false" onAction="#onClickTvillingene" text="Tvillingene (21. mai-20.juni)" />
+         <MenuItem mnemonicParsing="false" onAction="#onClickKrepsen" text="Krepsen (21.juni-22.juli)" />
+         <MenuItem mnemonicParsing="false" onAction="#onClickJomfruen" text="Jomfruen (23.august-22.sept)" />
+         <MenuItem mnemonicParsing="false" onAction="#onClickLoven" text="Løven (23.juli-22.august)" />
+         <MenuItem mnemonicParsing="false" onAction="#onClickVekten" text="Vekten (23.sept-22.oktober)" />
+         <MenuItem mnemonicParsing="false" onAction="#onClickSkorpionen" text="Skorpionen (23.oktober-21.nov)" />
+         <MenuItem mnemonicParsing="false" onAction="#onClickSteinbukken" text="Steinbukken (22.des-19.januar)" />
+         <MenuItem mnemonicParsing="false" onAction="#onClickVannmannen" text="Vannmannen (20.jan-18.feb)" />
+         <MenuItem mnemonicParsing="false" onAction="#onClickSkytten" text="Skytten (22.nov-21.des)" />
+         <MenuItem mnemonicParsing="false" onAction="#onClickFiskene" text="Fiskene (19.februar-20.mars)" />
+        </items>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </MenuButton>
+      <Label layoutX="288.0" layoutY="24.0" text="Horrorskopet">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="196.0" layoutY="69.0" text="(Horoskopets ateistiske, smått deprimerte onkel)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="223.0" text="">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Text fx:id="savefeedback" layoutX="204.0" layoutY="547.0" text="" textAlignment="CENTER" wrappingWidth="391.8603515625">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="futures" layoutX="596.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="140.51953125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
